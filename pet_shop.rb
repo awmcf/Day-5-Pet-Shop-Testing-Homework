@@ -1,15 +1,23 @@
-def pet_shop_name(name)
-  return name[:name]
+def pet_shop_name(pet_shop)
+  return pet_shop[:name]
 end
 
-def total_cash(sum)
-  return sum[:admin][:total_cash]
+def total_cash(pet_shop)
+  return pet_shop[:admin][:total_cash]
 end
 
-def pets_sold(pets)
-  return pets[:admin][:pets_sold]
+def add_or_remove_cash(pet_shop, cash_change)
+  return pet_shop[:admin][:total_cash] += cash_change
 end
 
-def stock_count(stock)
-  return stock [:pets].length
+def pets_sold(pet_shop)
+  return pet_shop[:admin][:pets_sold]
+end
+
+def increase_pets_sold
+
+end
+
+def stock_count(pet_shop)
+  return pet_shop[:pets].length
 end
